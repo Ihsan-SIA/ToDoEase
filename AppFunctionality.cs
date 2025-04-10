@@ -73,9 +73,27 @@ public class AppFunctionality : ITakeAction
         Console.ReadKey();
     }
 
-    public void EditTask(int id)
+    public void EditTask(int taskId, int editWhat, string edited)
     {
-
+        var task = _allTasks.Find(x => x.TaskID == taskId);
+        if (task is null)
+        {
+            Console.WriteLine($"Task with ID {taskId:000} not found. Press any button to continue");
+            Console.ReadKey();
+            return;
+        }
+        switch (editWhat)
+        {
+            case 1:
+                task.TaskTitle = edited;
+                Console.WriteLine("Task title edited successfully!. Press any button to continue.");
+                Console.ReadKey(); break;
+            case 2:
+                task.ActualTask = edited;
+                Console.WriteLine("Task edited successfully!. Press any button to continue.");
+                Console.ReadKey(); break;
+            default: return;
+        }
     }
 
     public void MarkCompleted(int id)
@@ -92,7 +110,7 @@ public class AppFunctionality : ITakeAction
             Console.ReadKey();
             return;
         }
-        Console.WriteLine($"Task ID: {tasks.TaskID:000}\tTask: {tasks.ActualTask}\tDate Created: {tasks.TimeCreated.ToLongDateString()}\tTask Status: {tasks.TaskStatus}");
+        Console.WriteLine($"Task ID: {tasks.TaskID:000}\tTask Titile: {tasks.TaskTitle}\tTask: {tasks.ActualTask}\tDate Created: {tasks.TimeCreated.ToLongDateString()}\tTask Status: {tasks.TaskStatus}");
         Console.WriteLine("Press any key to continue.");
         Console.ReadKey();
 

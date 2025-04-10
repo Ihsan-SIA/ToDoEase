@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\ihsan\\Desktop\\CodeIhsan\\TodoEase\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{92B1778F-1E04-470A-9BAB-2FDF7D12F450}|TodoEase.csproj|c:\\users\\ihsan\\desktop\\codeihsan\\todoease\\appfunctionality.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{92B1778F-1E04-470A-9BAB-2FDF7D12F450}|TodoEase.csproj|solutionrelative:appfunctionality.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{92B1778F-1E04-470A-9BAB-2FDF7D12F450}|TodoEase.csproj|c:\\users\\ihsan\\desktop\\codeihsan\\todoease\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{92B1778F-1E04-470A-9BAB-2FDF7D12F450}|TodoEase.csproj|solutionrelative:menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{92B1778F-1E04-470A-9BAB-2FDF7D12F450}|TodoEase.csproj|c:\\users\\ihsan\\desktop\\codeihsan\\todoease\\taskicons.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{92B1778F-1E04-470A-9BAB-2FDF7D12F450}|TodoEase.csproj|solutionrelative:taskicons.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{92B1778F-1E04-470A-9BAB-2FDF7D12F450}|TodoEase.csproj|c:\\users\\ihsan\\desktop\\codeihsan\\todoease\\appfunctionality.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92B1778F-1E04-470A-9BAB-2FDF7D12F450}|TodoEase.csproj|solutionrelative:appfunctionality.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{92B1778F-1E04-470A-9BAB-2FDF7D12F450}|TodoEase.csproj|c:\\users\\ihsan\\desktop\\codeihsan\\todoease\\itakeaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{92B1778F-1E04-470A-9BAB-2FDF7D12F450}|TodoEase.csproj|solutionrelative:itakeaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92B1778F-1E04-470A-9BAB-2FDF7D12F450}|TodoEase.csproj|c:\\users\\ihsan\\desktop\\codeihsan\\todoease\\taskicons.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92B1778F-1E04-470A-9BAB-2FDF7D12F450}|TodoEase.csproj|solutionrelative:taskicons.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{92B1778F-1E04-470A-9BAB-2FDF7D12F450}|TodoEase.csproj|c:\\users\\ihsan\\desktop\\codeihsan\\todoease\\todoease.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,50 +30,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Menu.cs",
               "DocumentMoniker": "C:\\Users\\ihsan\\Desktop\\CodeIhsan\\TodoEase\\Menu.cs",
               "RelativeDocumentMoniker": "Menu.cs",
               "ToolTip": "C:\\Users\\ihsan\\Desktop\\CodeIhsan\\TodoEase\\Menu.cs",
               "RelativeToolTip": "Menu.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAAwBMAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAQwBkAAABOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-07T17:21:59.027Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "ITakeAction.cs",
               "DocumentMoniker": "C:\\Users\\ihsan\\Desktop\\CodeIhsan\\TodoEase\\ITakeAction.cs",
               "RelativeDocumentMoniker": "ITakeAction.cs",
               "ToolTip": "C:\\Users\\ihsan\\Desktop\\CodeIhsan\\TodoEase\\ITakeAction.cs",
               "RelativeToolTip": "ITakeAction.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-07T16:58:22.379Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AppFunctionality.cs",
-              "DocumentMoniker": "C:\\Users\\ihsan\\Desktop\\CodeIhsan\\TodoEase\\AppFunctionality.cs",
-              "RelativeDocumentMoniker": "AppFunctionality.cs",
-              "ToolTip": "C:\\Users\\ihsan\\Desktop\\CodeIhsan\\TodoEase\\AppFunctionality.cs",
-              "RelativeToolTip": "AppFunctionality.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAQwBMAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-07T16:32:55.02Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "TaskIcons.cs",
               "DocumentMoniker": "C:\\Users\\ihsan\\Desktop\\CodeIhsan\\TodoEase\\TaskIcons.cs",
               "RelativeDocumentMoniker": "TaskIcons.cs",
@@ -81,8 +68,7 @@
               "RelativeToolTip": "TaskIcons.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-07T16:19:50.577Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-07T16:19:50.577Z"
             },
             {
               "$type": "Document",
@@ -94,7 +80,25 @@
               "RelativeToolTip": "ToDoEase.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-07T16:08:56.728Z",
+              "WhenOpened": "2025-03-07T16:08:56.728Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AppFunctionality.cs",
+              "DocumentMoniker": "C:\\Users\\ihsan\\Desktop\\CodeIhsan\\TodoEase\\AppFunctionality.cs",
+              "RelativeDocumentMoniker": "AppFunctionality.cs",
+              "ToolTip": "C:\\Users\\ihsan\\Desktop\\CodeIhsan\\TodoEase\\AppFunctionality.cs",
+              "RelativeToolTip": "AppFunctionality.cs",
+              "ViewState": "AgIAAGAAAAAALqFyp6sYwHAAAABZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T16:32:55.02Z",
               "EditorCaption": ""
             }
           ]

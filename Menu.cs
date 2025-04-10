@@ -22,6 +22,14 @@
                     Console.Write("Enter the ID of the task to delete: ");
                     int.TryParse(Console.ReadLine()!, out int taskID);
                     _takeAction.DeleteTask(taskID); break;
+                case 3:
+                    Console.Write("Enter the ID of the task you want to edit: ");
+                    int.TryParse(Console.ReadLine()!, out taskID);
+                    Console.Write("Enter 1 if you want to edit the title, or 2 if you want to edit the task itself: ");
+                    int.TryParse(Console.ReadLine()!, out int editWhat);
+                    Console.Write("Edit here: ");
+                    string edited = Console.ReadLine()!;
+                    _takeAction.EditTask(taskID, editWhat, edited); break;
                 case 5:
                     Console.Write("Enter the task ID to view: ");
                     int.TryParse(Console.ReadLine()!, out int taskId);

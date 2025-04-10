@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TodoEase")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fe22f7fcf729082403abb10e3c5e57c3c62ca22d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+59e8b56cde76e268e2f2d6e51e3b2b7889d547f0")]
 [assembly: System.Reflection.AssemblyProductAttribute("TodoEase")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TodoEase")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
