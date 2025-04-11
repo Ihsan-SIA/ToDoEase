@@ -6,9 +6,4 @@
     public DateTime TimeCreated { get; set; }
     public readonly List<int> CompletedTasks = new List<int>();
     public string TaskStatus { get; set; } = "Not completed";
-    //public TaskIcons()
-    //{
-    //    int taskID = 0;
-    //    TaskID = taskID;
-    //}
 }

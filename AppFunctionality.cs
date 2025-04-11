@@ -64,8 +64,7 @@ public class AppFunctionality : ITakeAction
         if (task is null)
         {
             Console.WriteLine($"Unable to find task {taskId:000}. Kindly confirm if the task still exist! Press any key to continue");
-            Console.ReadKey();
-            return;
+            Console.ReadKey(); return;
         }
         _allTasks.Remove(task);
         SaveData(_allTasks);
@@ -79,8 +78,7 @@ public class AppFunctionality : ITakeAction
         if (task is null)
         {
             Console.WriteLine($"Task with ID {taskId:000} not found. Press any button to continue");
-            Console.ReadKey();
-            return;
+            Console.ReadKey(); return;
         }
         switch (editWhat)
         {
@@ -96,9 +94,19 @@ public class AppFunctionality : ITakeAction
         }
     }
 
-    public void MarkCompleted(int id)
+    public void MarkCompleted(int taskID)
     {
-
+        var tasks = _allTasks.Find(x => x.TaskID == taskID);
+        if (tasks is null)
+        {
+            Console.WriteLine($"Sorry could not find task with ID {taskID:000}. Press any key to continue");
+            Console.ReadKey(); return;
+        }
+        string comp = "Completed";
+        tasks.TaskStatus = comp;
+        tasks.CompletedTasks.Add(tasks.TaskID);
+        Console.WriteLine($"Task with ID {taskID:000} marked as completed successfully! Click any button to continue!");
+        Console.ReadKey();
     }
 
     public void ViewATask(int taskID)

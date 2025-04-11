@@ -25,11 +25,15 @@
                 case 3:
                     Console.Write("Enter the ID of the task you want to edit: ");
                     int.TryParse(Console.ReadLine()!, out taskID);
-                    Console.Write("Enter 1 if you want to edit the title, or 2 if you want to edit the task itself: ");
+                    Console.Write("Press:\n1 to edit title\n2 to edit task: ");
                     int.TryParse(Console.ReadLine()!, out int editWhat);
                     Console.Write("Edit here: ");
                     string edited = Console.ReadLine()!;
                     _takeAction.EditTask(taskID, editWhat, edited); break;
+                case 4:
+                    Console.Write("Enter the ID of the task you mark: ");
+                    int.TryParse(Console.ReadLine()!, out taskID);
+                    _takeAction.MarkCompleted(taskID); break;
                 case 5:
                     Console.Write("Enter the task ID to view: ");
                     int.TryParse(Console.ReadLine()!, out int taskId);
