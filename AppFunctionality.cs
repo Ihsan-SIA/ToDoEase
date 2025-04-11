@@ -102,8 +102,8 @@ public class AppFunctionality : ITakeAction
             Console.WriteLine($"Sorry could not find task with ID {taskID:000}. Press any key to continue");
             Console.ReadKey(); return;
         }
-        string comp = "Completed";
-        tasks.TaskStatus = comp;
+
+        tasks.TaskStatus = true;
         tasks.CompletedTasks.Add(tasks.TaskID);
         Console.WriteLine($"Task with ID {taskID:000} marked as completed successfully! Click any button to continue!");
         Console.ReadKey();
@@ -118,7 +118,7 @@ public class AppFunctionality : ITakeAction
             Console.ReadKey();
             return;
         }
-        Console.WriteLine($"Task ID: {tasks.TaskID:000}\tTask Titile: {tasks.TaskTitle}\tTask: {tasks.ActualTask}\tDate Created: {tasks.TimeCreated.ToLongDateString()}\tTask Status: {tasks.TaskStatus}");
+        Console.WriteLine($"Task ID: {tasks.TaskID:000}\tTask Titile: {tasks.TaskTitle}\tTask: {tasks.ActualTask}\tDate Created: {tasks.TimeCreated.ToLongDateString()}\tTask Status: {(tasks.TaskStatus == false ? "Not Completed": "Completed")}");
         Console.WriteLine("Press any key to continue.");
         Console.ReadKey();
 
