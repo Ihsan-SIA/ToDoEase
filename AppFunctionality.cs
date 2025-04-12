@@ -85,10 +85,12 @@ public class AppFunctionality : ITakeAction
         {
             case 1:
                 task.TaskTitle = edited;
+                SaveData(_allTasks);
                 Console.WriteLine("Task title edited successfully!. Press any button to continue.");
                 Console.ReadKey(); break;
             case 2:
                 task.ActualTask = edited;
+                SaveData(_allTasks);
                 Console.WriteLine("Task edited successfully!. Press any button to continue.");
                 Console.ReadKey(); break;
             default: return;
