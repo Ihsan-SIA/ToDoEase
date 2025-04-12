@@ -86,7 +86,7 @@ public class AppFunctionality : ITakeAction
             case 1:
                 task.TaskTitle = edited;
                 SaveData(_allTasks);
-                Console.WriteLine("Task title edited successfully!. Press any button to continue.");
+                Console.WriteLine($"Task {taskId:000} title edited successfully!. Press any button to continue.");
                 Console.ReadKey(); break;
             case 2:
                 task.ActualTask = edited;
@@ -97,7 +97,7 @@ public class AppFunctionality : ITakeAction
         }
     }
 
-    public void MarkCompleted(int taskID)
+    public void MarkCompleted(int taskID, int status)
     {
         var tasks = _allTasks.Find(x => x.TaskID == taskID);
         if (tasks is null)
@@ -105,9 +105,12 @@ public class AppFunctionality : ITakeAction
             Console.WriteLine($"Sorry could not find task with ID {taskID:000}. Press any key to continue");
             Console.ReadKey(); return;
         }
-
-        tasks.TaskStatus = true;
-        tasks.CompletedTasks.Add(tasks.TaskID);
+        
+        switch(status)
+        {
+            case 1: tasks.TaskStatus = true; break;
+            case 0: tasks.TaskStatus = false; break;
+        }
         SaveData(_allTasks);
         Console.WriteLine($"Task with ID {taskID:000} marked as completed successfully! Click any button to continue!");
         Console.ReadKey();
@@ -122,9 +125,19 @@ public class AppFunctionality : ITakeAction
             Console.ReadKey();
             return;
         }
-        Console.WriteLine($"Task ID: {tasks.TaskID:000}\tTask Titile: {tasks.TaskTitle}\tTask: {tasks.ActualTask}\tDate Created: {tasks.TimeCreated.ToLongDateString()}\tTask Status: {(tasks.TaskStatus == false ? "Not Completed": "Completed")}");
+        Console.WriteLine($"Task ID: {tasks.TaskID:000}\t\tTask Titile: {tasks.TaskTitle}\t\tTask: {tasks.ActualTask}\t\tDate Created: {tasks.TimeCreated.ToString("f")}\t\tTask Status: {(tasks.TaskStatus == false ? "Not Completed": "Completed")}");
         Console.WriteLine("Press any key to continue.");
         Console.ReadKey();
+    }
+    public void DisplayAllTasks()
+    {
+        foreach (var task in _allTasks)
+        {
+            Console.WriteLine($"Task ID: {task.TaskID:000}\t\tTask Title: {task.TaskTitle}\t\tTask: {task.ActualTask}\t\tDate Created: {task.TimeCreated.ToString("f")}\t\tTask status: {(task.TaskStatus == false ? "Not completed" : "Completed")}");
+            Console.WriteLine();
+        }
 
+        Console.WriteLine("Click any button to continue");
+        Console.ReadKey();
     }
 }

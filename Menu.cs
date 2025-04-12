@@ -25,7 +25,7 @@
                 case 3:
                     Console.Write("Enter the ID of the task you want to edit: ");
                     int.TryParse(Console.ReadLine()!, out taskID);
-                    Console.Write("Press:\n1 to edit title\n2 to edit task: ");
+                    Console.Write("Press 1 to edit title, 2 to edit task:\n");
                     int.TryParse(Console.ReadLine()!, out int editWhat);
                     Console.Write("Edit here: ");
                     string edited = Console.ReadLine()!;
@@ -33,11 +33,15 @@
                 case 4:
                     Console.Write("Enter the ID of the task you mark: ");
                     int.TryParse(Console.ReadLine()!, out taskID);
-                    _takeAction.MarkCompleted(taskID); break;
+                    Console.Write("Enter 1 to make as completed, enter 0 to mark as not completed: ");
+                    int.TryParse(Console.ReadLine()!, out int completed);
+                    _takeAction.MarkCompleted(taskID, completed); break;
                 case 5:
                     Console.Write("Enter the task ID to view: ");
                     int.TryParse(Console.ReadLine()!, out int taskId);
                     _takeAction.ViewATask(taskId); break;
+                case 6:
+                    _takeAction.DisplayAllTasks(); break;
             }
         }
     }
@@ -46,8 +50,9 @@
         Console.WriteLine("Click 1 to create new task");
         Console.WriteLine("Click 2 to delete existing task");
         Console.WriteLine("Click 3 to edit existing task");
-        Console.WriteLine("Click 4 to mark a task as completed");
+        Console.WriteLine("Click 4 to mark a task as completed/not completed");
         Console.WriteLine("Click 5 to view a task details");
+        Console.WriteLine("Click 6 to display all task details");
         Console.WriteLine("Click 0 to exit app");
     }
 }
