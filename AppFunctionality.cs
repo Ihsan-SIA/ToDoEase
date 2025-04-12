@@ -1,4 +1,5 @@
 ﻿using System.IO;
+using System.Runtime.CompilerServices;
 using System.Text.Encodings.Web;
 using System.Text.Json;
 using System.Threading.Tasks;
@@ -105,6 +106,7 @@ public class AppFunctionality : ITakeAction
 
         tasks.TaskStatus = true;
         tasks.CompletedTasks.Add(tasks.TaskID);
+        SaveData(_allTasks);
         Console.WriteLine($"Task with ID {taskID:000} marked as completed successfully! Click any button to continue!");
         Console.ReadKey();
     }
